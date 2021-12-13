@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Indies Travel Agency</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">
+          <a href="#">Indies Travel Agency</a>
+        </h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="travel.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          fugit explicabo tempora praesentium voluptatibus, placeat omnis
+          numquam illo cum deleniti.
+        </p>
+        <a href="#"> Explore More</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <img src="facebook.png" alt="facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="instagram.png" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="twitter.png" alt="twitter" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcaseToggle = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcaseToggle.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
